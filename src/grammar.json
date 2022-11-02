@@ -331,6 +331,10 @@
           },
           {
             "type": "PATTERN",
+            "value": "\\\\[0-7]{1,3}"
+          },
+          {
+            "type": "PATTERN",
             "value": "\\\\N\\{[A-Za-z- ]+\\}"
           }
         ]

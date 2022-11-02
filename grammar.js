@@ -90,6 +90,7 @@ module.exports = grammar({
           /\\x[0-9A-Fa-f]{2}/,
           /\\u[0-9A-Fa-f]{4}/,
           /\\U[0-9A-Fa-f]{8}/,
+          /\\[0-7]{1,3}/, // octal
           /\\N\{[A-Za-z- ]+\}/ // unicode named characters
         )
       ),

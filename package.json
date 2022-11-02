@@ -1,0 +1,31 @@
+{
+  "name": "tree-sitter-meson",
+  "version": "1.0.0",
+  "description": "Meson grammar for TTTe-sitter",
+  "main": "bindings/node",
+  "keywords": [
+    "parsing",
+    "incremental"
+  ],
+  "dependencies": {
+    "nan": "^2.12.1"
+  },
+  "devDependencies": {
+    "prettier": "^2.3.2",
+    "tree-sitter-cli": "^0.20.7"
+  },
+  "scripts": {
+    "test": "tree-sitter test",
+    "format": "prettier --trailing-comma es5 --write grammar.js",
+    "format-check": "prettier --trailing-comma es5 --check grammar.js"
+  },
+  "tree-sitter": [
+    {
+      "scope": "source.meson",
+      "file-types": [
+        "meson",
+        "meson.build"
+      ]
+    }
+  ]
+}

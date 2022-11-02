@@ -44,9 +44,10 @@ module.exports = grammar({
     int_literal: (_$) =>
       token(
         choice(
-          /0x[a-fA-F0-9]+/, // hex
+          /0[Xx][a-fA-F0-9]+/, // hex
           /[1-9][0-9]*/, //decimal (not zero)
-          /0o[0-7]+/, // octal
+          /0[Oo][0-7]+/, // octal
+          /0[Bb][01]+/, // binary
           "0" // zero
         )
       ),

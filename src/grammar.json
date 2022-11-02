@@ -142,7 +142,7 @@
         "members": [
           {
             "type": "PATTERN",
-            "value": "0x[a-fA-F0-9]+"
+            "value": "0[Xx][a-fA-F0-9]+"
           },
           {
             "type": "PATTERN",
@@ -150,7 +150,11 @@
           },
           {
             "type": "PATTERN",
-            "value": "0o[0-7]+"
+            "value": "0[Oo][0-7]+"
+          },
+          {
+            "type": "PATTERN",
+            "value": "0[Bb][01]+"
           },
           {
             "type": "STRING",

@@ -34,6 +34,13 @@ The following bugs were found in the documented grammar which we have fixed here
    appearance to the last statement of a given branch (as nothing after them would be
    executed anyway.)
 
+4. Binary literals are documented as supported but missing from the grammar.
+   (Which begs the question, what is the purpose of supporting binary literals?)
+
+5. Literal binary, octal, and hex integers can use a capital letter to indicate
+   the case (for example 0X1234).  This is not reflected in the docs, but it is
+   the actual implementation.
+
 That whole grammar is repeated below:
 ```
 This is the full Meson grammar, as it is used to parse Meson build definition files:

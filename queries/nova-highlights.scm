@@ -60,7 +60,7 @@
 (int_literal) @value.number
 
 (keyword_argument keyword: (identifier) @identifier.key)
-(escape_sequence) @string.special
+(escape_sequence) @value.entity
 (bad_escape) @invalid
 
 [
